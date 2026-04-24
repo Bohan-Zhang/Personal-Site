@@ -728,54 +728,6 @@ section { padding-block: 110px; position: relative; }
   border: 1px solid rgba(59,142,255,.18);
   color: var(--blue);
 }
-
-/* Proficiency bars */
-.prof-section { margin-top: 56px; }
-.prof-head {
-  font-family: var(--ff-mono);
-  font-size: 9px;
-  letter-spacing: .22em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 28px;
-}
-.prof-row {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding-block: 14px;
-  border-bottom: 1px solid var(--border);
-}
-.prof-label {
-  width: 200px;
-  font-size: 13.5px;
-  font-weight: 500;
-  color: var(--text);
-  flex-shrink: 0;
-}
-.prof-track {
-  flex: 1;
-  height: 2px;
-  background: var(--ink-5);
-  position: relative;
-}
-.prof-fill {
-  position: absolute;
-  left: 0; top: 0; bottom: 0;
-  background: linear-gradient(90deg, var(--gold), var(--gold-hi));
-  transform-origin: left;
-  transform: scaleX(0);
-  transition: transform 1.4s cubic-bezier(.16,1,.3,1);
-}
-.prof-fill.animate { transform: scaleX(1); }
-.prof-pct {
-  font-family: var(--ff-mono);
-  font-size: 10px;
-  color: var(--gold);
-  width: 50px;
-  text-align: right;
-}
-
 /* ────────────────────────────────────────────
    ROBOTICS
 ──────────────────────────────────────────── */
@@ -1430,16 +1382,15 @@ footer {
       </div>
 
       <p class="hero-intro reveal d3">
-        I'm a <strong>high-achieving graduate</strong> of All Saints Catholic High School and Earl of March Secondary School in Ottawa —
-        a competitive Wushu athlete who has represented <strong>Canada nationally</strong>, a
-        <strong>two-time FRC Worlds qualifier</strong>, and a programmer who builds real software
-        under real pressure. I don't just aim to participate — I aim to <strong>lead, compete, and win.</strong>
+        I'm a high-achieving student of All Saints Catholic High School and Earl of March Secondary School in Ottawa —
+        a competitive Wushu athlete who has represented Canada nationally, and 
+        two-time FRC Worlds qualifier. I aim to lead, compete, and win.
       </p>
 
       <p class="hero-intro reveal d4" style="margin-top:-14px;">
-        My ambition is to build a career at the intersection of <strong>engineering and technology</strong> —
-        applying the discipline forged through martial arts, the systems thinking developed in robotics,
-        and the analytical rigor honed through competitive mathematics.
+        My ambition is to build a career that involves engineering and technology —
+        applying critical thinking developed in robotics,
+        work ethic honed in athletics, to solve complex problems and drive impact.
       </p>
 
       <div class="hero-cta reveal d5">
@@ -1481,7 +1432,7 @@ footer {
           <!-- ★ REPLACE: swap .photo-slot with <img src="your-photo.jpg" alt="Bohan Zhang"> -->
           <div class="photo-slot hero-photo-slot">
             <div class="ps-tag">Profile Photo</div>
-            <div class="ps-icon">📷</div>
+            <div class="ps-icon"></div>
             <div class="ps-label">Upload your<br>profile photo here</div>
           </div>
         </div>
@@ -1510,9 +1461,9 @@ footer {
         <h2 class="display" style="margin-bottom:32px;">More than a<br><em>résumé.</em></h2>
 
         <div class="about-body">
-          <p>I'm Bohan Zhang — I attended All Saints Catholic High School (Grades 7–9) and Earl of March Secondary School (Grades 10–11), <strong>competing at the highest levels</strong> across martial arts, robotics, academics, and team sports throughout every stage of high school.</p>
-          <p>I believe discipline is a skill that transfers. The training habits I've built in Wushu — deliberate practice, composure under pressure, respect for the process — are exactly the same habits I bring to writing competition-grade Java code, designing business analytics reports, or stepping into a new team environment.</p>
-          <p><strong>I'm not looking for the easiest path.</strong> I'm building the skills, experiences, and track record that will let me make a real impact in engineering and technology.</p>
+          <p>I'm Bohan Zhang — I attended All Saints Catholic High School (Grades 7–9) and Earl of March Secondary School (Grades 10–11), competing at the high levels across martial arts, robotics, academics, and team sports throughout every stage of high school.</p>
+          <p>I believe discipline is a skill that transfers. The training habits I've built in Wushu — deliberate practice, composure under pressure, respect for the process — are exactly the same habits I bring to writing complex Java code, designing business analytics reports, or stepping into a new team environment.</p>
+          <p>I'm not looking for the easiest path. I'm building the skills, experiences, and track record that will let me make a real impact in engineering and technology.</p>
         </div>
 
         <div class="about-tags">
@@ -1550,12 +1501,12 @@ footer {
         <div class="about-photo-pair">
           <div class="photo-slot">
             <div class="ps-tag">Photo 2</div>
-            <div class="ps-icon">📸</div>
+            <div class="ps-icon"></div>
             <div class="ps-label">Action or<br>hobby photo</div>
           </div>
           <div class="photo-slot">
             <div class="ps-tag">Photo 3</div>
-            <div class="ps-icon">📸</div>
+            <div class="ps-icon"></div>
             <div class="ps-label">Team or<br>award photo</div>
           </div>
         </div>
@@ -1675,7 +1626,7 @@ footer {
 
     <div class="skill-cards-grid reveal">
       <div class="sc">
-        <div class="sc-icon">☕</div>
+        <div class="sc-icon"></div>
         <div class="sc-title">Java</div>
         <div class="sc-body">Primary programming language developed through AP Computer Science and 3 years of FRC robotics. Used in Counterspell hackathon and for writing competition-grade robot control systems.</div>
         <div class="sc-tags">
@@ -1685,7 +1636,7 @@ footer {
         </div>
       </div>
       <div class="sc">
-        <div class="sc-icon">🐍</div>
+        <div class="sc-icon"></div>
         <div class="sc-title">Python</div>
         <div class="sc-body">Applied at the Counterspell hackathon for rapid prototyping and project development. Strong foundation in scripting, automation logic, and data manipulation.</div>
         <div class="sc-tags">
@@ -1694,7 +1645,7 @@ footer {
         </div>
       </div>
       <div class="sc">
-        <div class="sc-icon">🌐</div>
+        <div class="sc-icon"></div>
         <div class="sc-title">HTML &amp; Web</div>
         <div class="sc-body">Built websites from scratch using HTML and CSS. Understands web structure, layout design, and the fundamentals of how professional digital experiences are constructed.</div>
         <div class="sc-tags">
@@ -1704,7 +1655,7 @@ footer {
         </div>
       </div>
       <div class="sc">
-        <div class="sc-icon">📊</div>
+        <div class="sc-icon"></div>
         <div class="sc-title">Google Sheets &amp; Office</div>
         <div class="sc-body">Advanced proficiency in spreadsheet-based data organization, financial modelling, and business report creation. Applied across Grades 10 and 11 Business to produce complex, professional deliverables.</div>
         <div class="sc-tags">
@@ -1714,7 +1665,7 @@ footer {
         </div>
       </div>
       <div class="sc">
-        <div class="sc-icon">☁️</div>
+        <div class="sc-icon"></div>
         <div class="sc-title">Cloud &amp; File Systems</div>
         <div class="sc-body">Proficient with OneDrive and Google Drive for structured digital workflow, version management, and collaborative file sharing. Strong personal file organization and digital management habits.</div>
         <div class="sc-tags">
@@ -1724,7 +1675,7 @@ footer {
         </div>
       </div>
       <div class="sc">
-        <div class="sc-icon">🎨</div>
+        <div class="sc-icon"></div>
         <div class="sc-title">Tinkercad &amp; Blender</div>
         <div class="sc-body">3D modelling and design experience through Tinkercad for engineering components and Blender for more advanced 3D design — bridging the gap between software logic and physical design thinking.</div>
         <div class="sc-tags">
@@ -1840,7 +1791,7 @@ footer {
       <!-- KUNG FU / WUSHU COLUMN -->
       <div class="reveal-l">
         <div class="medal-header">
-          <div class="medal-header-icon">🥋</div>
+          <div class="medal-header-icon"></div>
           <div>
             <div class="medal-header-title">Wushu / Kung Fu — Elite Athlete</div>
             <div class="medal-header-sub">Xinqiao Wushu Ottawa · Canada National Team Member · National Rankings</div>
@@ -1849,71 +1800,71 @@ footer {
 
         <div class="medal-tally">
           <div class="mt-item">
-            <span class="mt-emoji">🥇</span>
+            <span class="mt-emoji"></span>
             <div><div class="mt-num">8</div><div class="mt-word">Gold Medals</div></div>
           </div>
           <div class="mt-item">
-            <span class="mt-emoji">🥈</span>
+            <span class="mt-emoji"></span>
             <div><div class="mt-num">2</div><div class="mt-word">Silver Medals</div></div>
           </div>
           <div class="mt-item">
-            <span class="mt-emoji">🥉</span>
+            <span class="mt-emoji"></span>
             <div><div class="mt-num">1</div><div class="mt-word">Bronze Medal</div></div>
           </div>
         </div>
 
         <ul class="ach-list">
           <li class="ach-item">
-            <span class="ach-bullet">🥇</span>
+            <span class="ach-bullet"></span>
             <div>
               <div class="ach-title">2025 Ontario Martial Arts Championship — Gold</div>
               <div class="ach-detail">Sanda Class C, Ages 15–17, 75kg · Entered <strong>National Sanda Athletes Ranking List</strong></div>
             </div>
           </li>
           <li class="ach-item">
-            <span class="ach-bullet">🥇</span>
+            <span class="ach-bullet"></span>
             <div>
               <div class="ach-title">2025 International Martial Arts Festival &amp; National Championship — Double Gold (Taolu)</div>
               <div class="ach-detail">Open Group: Daoshu B &amp; Gunshu B — National-level competition</div>
             </div>
           </li>
           <li class="ach-item">
-            <span class="ach-bullet">🥇</span>
+            <span class="ach-bullet"></span>
             <div>
               <div class="ach-title">2025 Montreal Wushu Championship — Double Gold</div>
               <div class="ach-detail">Advanced Group: Daoshu B &amp; Gunshu B</div>
             </div>
           </li>
           <li class="ach-item">
-            <span class="ach-bullet">🥇</span>
+            <span class="ach-bullet"></span>
             <div>
               <div class="ach-title">2025 RTD Sanda Competition — Gold</div>
               <div class="ach-detail">Sanda Class D, Ages 15–17, 75kg</div>
             </div>
           </li>
           <li class="ach-item">
-            <span class="ach-bullet">🥇</span>
+            <span class="ach-bullet"></span>
             <div>
               <div class="ach-title">2024 Ontario Martial Arts Championship — Gold</div>
               <div class="ach-detail">Sanda Class D, Ages 12–14, 75kg · <strong>Selected for Canada National Team</strong></div>
             </div>
           </li>
           <li class="ach-item">
-            <span class="ach-bullet">🥇</span>
+            <span class="ach-bullet"></span>
             <div>
               <div class="ach-title">2023 Pan Am Kungfu Championship — Gold</div>
               <div class="ach-detail">4th Pan Am Championship · Sanda Class E, Ages 12–14, 65kg</div>
             </div>
           </li>
           <li class="ach-item">
-            <span class="ach-bullet">🥇</span>
+            <span class="ach-bullet"></span>
             <div>
               <div class="ach-title">2024 National Martial Arts Championship — Silver (Taolu)</div>
               <div class="ach-detail">Open Group, Daoshu B · National Championship level</div>
             </div>
           </li>
           <li class="ach-item">
-            <span class="ach-bullet">🥈</span>
+            <span class="ach-bullet"></span>
             <div>
               <div class="ach-title">2024 National Martial Arts Championship — Silver (Sanda)</div>
               <div class="ach-detail">Sanda Class D, Ages 12–14, 75kg</div>
@@ -1937,16 +1888,16 @@ footer {
         <h3 style="font-family:var(--ff-display);font-size:28px;font-weight:700;color:var(--white);margin-bottom:28px;">Team <em style="color:var(--gold);">Sports</em></h3>
 
         <div class="sport-card">
-          <div class="sport-emo">🎯</div>
+          <div class="sport-emo"></div>
           <div>
             <div class="sport-name">Tchoukball — Team MVP</div>
             <div class="sport-body">Competed on the All Saints Catholic High School Tchoukball team in Grade 9. Awarded <strong>Team MVP</strong> for exceptional performance, on-court leadership, and competitive contribution. Tchoukball demands spatial awareness, precise teamwork, and strategic thinking under pressure — skills that translate across every environment I work in.</div>
-            <div class="mvp">🏆 Team MVP Award — Grade 9</div>
+            <div class="mvp"> Team MVP Award — Grade 9</div>
           </div>
         </div>
 
         <div class="sport-card">
-          <div class="sport-emo">⚾</div>
+          <div class="sport-emo"></div>
           <div>
             <div class="sport-name">Softball Team</div>
             <div class="sport-body">Member of the All Saints Catholic High School Softball Team in Grade 9. Developed collaborative communication, physical conditioning, and the discipline of showing up prepared every single day — reinforcing the same team-first mindset I bring to robotics and academics.</div>
@@ -1960,7 +1911,7 @@ footer {
         <!-- ★ REPLACE: School sports team photo or action shot -->
         <div class="school-sports-photo photo-slot">
           <div class="ps-tag">School Sports</div>
-          <div class="ps-icon">⚽</div>
+          <div class="ps-icon"></div>
           <div class="ps-label">Tchoukball or softball<br>team/action photo</div>
         </div>
       </div>
@@ -1981,13 +1932,13 @@ footer {
 
     <div class="acad-grid reveal">
       <div class="ac-card">
-        <div class="ac-icon">🏆</div>
+        <div class="ac-icon"></div>
         <div class="ac-yr">University of Waterloo · Math Competition</div>
         <div class="ac-title">Waterloo Distinction — First Award</div>
         <div class="ac-body">Earned a Distinction from the University of Waterloo's prestigious mathematics competition — placing among the top performers nationally. Reflects exceptional mathematical reasoning, problem-solving fluency, and ability to perform under high-stakes exam conditions.</div>
       </div>
       <div class="ac-card">
-        <div class="ac-icon">🥇</div>
+        <div class="ac-icon"></div>
         <div class="ac-yr">University of Waterloo · Math Competition</div>
         <div class="ac-title">Waterloo Distinction — Second Award</div>
         <div class="ac-body">A second Distinction in the Waterloo Mathematics series — demonstrating consistency and depth of mathematical talent across multiple competition levels. Back-to-back recognition from one of Canada's most respected academic competitions is a rare achievement.</div>
@@ -2001,7 +1952,7 @@ footer {
     </div>
 
     <div class="acad-note reveal d2">
-      <div class="acad-note-icon">📐</div>
+      <div class="acad-note-icon"></div>
       <div>
         <div class="acad-note-head">Why Mathematics Matters To Me</div>
         <p>Mathematics is the foundation of everything I care about — robotics systems, programming logic, business modelling, and competitive strategy. Earning <strong>back-to-back Waterloo Distinction awards</strong> isn't just a credential — it confirms that I approach learning the same way I approach competition: I don't just meet the standard, I push well beyond it.</p>
@@ -2022,7 +1973,7 @@ footer {
 
     <div class="proj-grid reveal">
       <div class="proj-card">
-        <div class="proj-thumb">⚡</div>
+        <div class="proj-thumb"></div>
         <div class="proj-body">
           <div class="proj-cat">Hackathon · Coding</div>
           <div class="proj-title">Counterspell Hackathon</div>
@@ -2037,7 +1988,7 @@ footer {
       </div>
 
       <div class="proj-card">
-        <div class="proj-thumb">🤖</div>
+        <div class="proj-thumb"></div>
         <div class="proj-body">
           <div class="proj-cat">Robotics · Engineering</div>
           <div class="proj-title">FRC Competition Robot Software</div>
@@ -2052,7 +2003,7 @@ footer {
       </div>
 
       <div class="proj-card">
-        <div class="proj-thumb">📊</div>
+        <div class="proj-thumb"></div>
         <div class="proj-body">
           <div class="proj-cat">Business · Data Analysis</div>
           <div class="proj-title">Business Analysis Reports</div>
@@ -2066,7 +2017,7 @@ footer {
       </div>
 
       <div class="proj-card">
-        <div class="proj-thumb">🌐</div>
+        <div class="proj-thumb"></div>
         <div class="proj-body">
           <div class="proj-cat">Web · Design</div>
           <div class="proj-title">Website Creation Projects</div>
@@ -2112,13 +2063,7 @@ footer {
               <div class="cl-val">github.com/your-username</div>
             </div>
           </a>
-          <a href="https://linkedin.com/in/your-profile" target="_blank" class="cl-item">
-            <div class="cl-ico">💼</div>
-            <div>
-              <div class="cl-lbl">LinkedIn</div>
-              <div class="cl-val">linkedin.com/in/your-profile</div>
-            </div>
-          </a>
+          
         </div>
       </div>
 
